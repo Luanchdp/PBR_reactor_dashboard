@@ -53,7 +53,7 @@ with tab1:
     A principal diferença entre os reatores envolvendo reações homogeneas e reações PFR (reações heterogêneas) é que no ultimo caso a reação acontece na superfície de um catalisador sólido. Os reatores de leixo fixo, ou "packed bed reactor", são reatores cheios com partículas de catalizadores ao longo de toda sua extensão.
     </p>
     """, unsafe_allow_html=True)
-    #st.image("C:\\Users\\luan.chagas\\OneDrive - Shell\\Documents\\My Pictures\\Screenshots\\Esquema PBR.png", caption="Esquema simplificado de um reator PBR")
+    st.image("https://github.com/amandalemette/ENG1818/blob/6fb679e023faf5918633c3fd921cb7b46d914e29/Imagens/im6.png?raw=true", caption="Esquema simplificado de um reator PBR")
     st.header("O Modelo")
     st.write("""
     <p style='font-size:20px'>
@@ -164,4 +164,5 @@ with tab2:
             # Criar tabela dos vetores gerados
             results_df = pd.DataFrame(st.session_state['results'][-1], columns=["Ácido Benzóico (mol/uL)", "Etanol (mol/uL)", "Etil Benzeno (mol/uL)"])
             st.markdown("### Tabela de Concentrações")
+
             st.dataframe(results_df, width=1000, height=600)
